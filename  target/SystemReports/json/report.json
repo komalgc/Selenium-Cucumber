@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13907779612,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginsteps.setup()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Test Successful Login",
+        "description": "",
+        "id": "login-feature;test-successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 126706605,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginsteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 258159974,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user in HomePage",
+            "match": {
+              "location": "loginsteps.the_user_in_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1475486659,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Clicks on FormAuthentication",
+            "match": {
+              "location": "loginsteps.clicks_on_FormAuthentication()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 262639714,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The user Enters \"tomsmith\" in username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomsmith",
+                  "offset": 17
+                }
+              ],
+              "location": "loginsteps.the_user_Enters_in_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169981823,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user Enters \"SuperSecretPassword!\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SuperSecretPassword!",
+                  "offset": 17
+                }
+              ],
+              "location": "loginsteps.the_user_Enters_in_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1158056965,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Clicks on Login Button",
+            "match": {
+              "location": "loginsteps.clicks_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85652180,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is Navigated to Secure Area",
+            "match": {
+              "location": "loginsteps.user_is_Navigated_to_Secure_Area()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
