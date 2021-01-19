@@ -1,22 +1,24 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("dropdown.feature");
 formatter.feature({
   "line": 1,
-  "name": "Login Feature",
+  "name": "Dropdown Feature",
   "description": "",
-  "id": "login-feature",
+  "id": "dropdown-feature",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 9092198919,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 2,
-  "name": "Test Successful Login",
+formatter.scenarioOutline({
+  "line": 3,
+  "name": "Select one option from the dropdown",
   "description": "",
-  "id": "login-feature;test-successful-login",
-  "type": "scenario",
-  "keyword": "Scenario"
+  "id": "dropdown-feature;select-one-option-from-the-dropdown",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@Dropdowntag"
+    }
+  ]
 });
 formatter.step({
   "line": 4,
@@ -25,85 +27,221 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "Clicks on FormAuthentication",
+  "name": "Clicks on Dropdownoption",
   "keyword": "And "
 });
 formatter.step({
   "line": 6,
-  "name": "The user Enters \"tomsmith\" in username field",
+  "name": "The user selects \"\u003cDropdownoptiontoselect\u003e\" from the dropdown",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "The user Enters \"SuperSecretPassword!\" in password field",
-  "keyword": "And "
+  "name": "\"\u003cDropdownoptiontoselect\u003e\" is selected",
+  "keyword": "Then "
 });
-formatter.step({
-  "line": 8,
-  "name": "Clicks on Login Button",
-  "keyword": "And "
-});
-formatter.step({
+formatter.examples({
   "line": 9,
-  "name": "User is Navigated to Secure Area",
+  "name": "",
+  "description": "",
+  "id": "dropdown-feature;select-one-option-from-the-dropdown;",
+  "rows": [
+    {
+      "cells": [
+        "Dropdownoptiontoselect"
+      ],
+      "line": 10,
+      "id": "dropdown-feature;select-one-option-from-the-dropdown;;1"
+    },
+    {
+      "cells": [
+        "Option 1"
+      ],
+      "line": 11,
+      "id": "dropdown-feature;select-one-option-from-the-dropdown;;2"
+    },
+    {
+      "cells": [
+        "Option 2"
+      ],
+      "line": 12,
+      "id": "dropdown-feature;select-one-option-from-the-dropdown;;3"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 10114640187,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 11,
+  "name": "Select one option from the dropdown",
+  "description": "",
+  "id": "dropdown-feature;select-one-option-from-the-dropdown;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@Dropdowntag"
+    }
+  ]
+});
+formatter.step({
+  "line": 4,
+  "name": "The user in HomePage",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "Clicks on Dropdownoption",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "The user selects \"Option 1\" from the dropdown",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "\"Option 1\" is selected",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Then "
 });
 formatter.match({
   "location": "loginsteps.the_user_in_HomePage()"
 });
 formatter.result({
-  "duration": 231747218,
+  "duration": 140137948,
   "status": "passed"
 });
 formatter.match({
-  "location": "loginsteps.clicks_on_FormAuthentication()"
+  "location": "dropdownsteps.clicks_on_Dropdownoption()"
 });
 formatter.result({
-  "duration": 2559852431,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "tomsmith",
-      "offset": 17
-    }
-  ],
-  "location": "loginsteps.the_user_Enters_in_username_field(String)"
-});
-formatter.result({
-  "duration": 209509102,
-  "status": "passed"
+  "duration": 1022288,
+  "error_message": "java.lang.NullPointerException\n\tat StepDefinations.dropdownsteps.clicks_on_Dropdownoption(dropdownsteps.java:26)\n\tat ✽.And Clicks on Dropdownoption(dropdown.feature:5)\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "SuperSecretPassword!",
-      "offset": 17
+      "val": "Option 1",
+      "offset": 18
     }
   ],
-  "location": "loginsteps.the_user_Enters_in_password_field(String)"
+  "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
 });
 formatter.result({
-  "duration": 122538426,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
-  "location": "loginsteps.clicks_on_Login_Button()"
+  "arguments": [
+    {
+      "val": "Option 1",
+      "offset": 1
+    }
+  ],
+  "location": "dropdownsteps.is_selected(String)"
 });
 formatter.result({
-  "duration": 945421782,
-  "status": "passed"
-});
-formatter.match({
-  "location": "loginsteps.user_is_Navigated_to_Secure_Area()"
-});
-formatter.result({
-  "duration": 45741510,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 169349326,
+  "duration": 51404,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 4545172650,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Select one option from the dropdown",
+  "description": "",
+  "id": "dropdown-feature;select-one-option-from-the-dropdown;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@Dropdowntag"
+    }
+  ]
+});
+formatter.step({
+  "line": 4,
+  "name": "The user in HomePage",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "Clicks on Dropdownoption",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "The user selects \"Option 2\" from the dropdown",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "\"Option 2\" is selected",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "loginsteps.the_user_in_HomePage()"
+});
+formatter.result({
+  "duration": 41325,
+  "status": "passed"
+});
+formatter.match({
+  "location": "dropdownsteps.clicks_on_Dropdownoption()"
+});
+formatter.result({
+  "duration": 388601,
+  "error_message": "java.lang.NullPointerException\n\tat StepDefinations.dropdownsteps.clicks_on_Dropdownoption(dropdownsteps.java:26)\n\tat ✽.And Clicks on Dropdownoption(dropdown.feature:5)\n",
+  "status": "failed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Option 2",
+      "offset": 18
+    }
+  ],
+  "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Option 2",
+      "offset": 1
+    }
+  ],
+  "location": "dropdownsteps.is_selected(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 43646,
   "status": "passed"
 });
 });

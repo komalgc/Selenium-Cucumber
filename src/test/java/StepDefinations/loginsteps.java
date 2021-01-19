@@ -12,9 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.SecureAreaPage;
-
 import java.util.concurrent.TimeUnit;
-
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -31,26 +29,26 @@ public class loginsteps {
 
         driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
 
     @After
     public void teardown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Given("^The user in HomePage$")
     public void the_user_in_HomePage() throws Throwable {
 
         homePage = new HomePage(driver);
-        secureAreaPage = new SecureAreaPage(driver);
+
 
     }
 
     @Given("^Clicks on FormAuthentication$")
     public void clicks_on_FormAuthentication() throws Throwable {
-         loginPage = homePage.clickonAuthenticationPage();
+        loginPage = homePage.clickonAuthenticationPage();
 
     }
 
@@ -66,7 +64,7 @@ public class loginsteps {
 
     @When("^Clicks on Login Button$")
     public void clicks_on_Login_Button() throws Throwable {
-       secureAreaPage = loginPage.clickLogin();
+        secureAreaPage = loginPage.clickLogin();
 
     }
 
@@ -78,4 +76,3 @@ public class loginsteps {
     }
 
 }
-

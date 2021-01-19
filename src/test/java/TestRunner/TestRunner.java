@@ -9,8 +9,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/Features",
         glue = {"StepDefinations"},
-        plugin ={"pretty", "html:target/SystemReports/html",
-        "json: target/SystemReports/json/cucumber.json"}
+        plugin = {"pretty", "html:target/SystemReports/html",
+                "json: target/SystemReports/json/cucumber.json"},
+        tags = {"@Dropdowntag"}
+
+
+
 )
 public class TestRunner {
 }

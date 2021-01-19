@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9092198919,
+              "duration": 10114640187,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 2,
-        "name": "Test Successful Login",
+        "line": 11,
+        "name": "Select one option from the dropdown",
         "description": "",
-        "id": "login-feature;test-successful-login",
+        "id": "dropdown-feature;select-one-option-from-the-dropdown;;2",
         "after": [
           {
             "result": {
-              "duration": 169349326,
+              "duration": 51404,
               "status": "passed"
             },
             "match": {
@@ -30,11 +30,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 231747218,
+              "duration": 140137948,
               "status": "passed"
             },
             "line": 4,
@@ -46,83 +46,173 @@
           },
           {
             "result": {
-              "duration": 2559852431,
-              "status": "passed"
+              "duration": 1022288,
+              "error_message": "java.lang.NullPointerException\n\tat StepDefinations.dropdownsteps.clicks_on_Dropdownoption(dropdownsteps.java:26)\n\tat ✽.And Clicks on Dropdownoption(dropdown.feature:5)\n",
+              "status": "failed"
             },
             "line": 5,
-            "name": "Clicks on FormAuthentication",
+            "name": "Clicks on Dropdownoption",
             "match": {
-              "location": "loginsteps.clicks_on_FormAuthentication()"
+              "location": "dropdownsteps.clicks_on_Dropdownoption()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 209509102,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
-            "name": "The user Enters \"tomsmith\" in username field",
+            "name": "The user selects \"Option 1\" from the dropdown",
             "match": {
               "arguments": [
                 {
-                  "val": "tomsmith",
-                  "offset": 17
+                  "val": "Option 1",
+                  "offset": 18
                 }
               ],
-              "location": "loginsteps.the_user_Enters_in_username_field(String)"
+              "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 122538426,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
-            "name": "The user Enters \"SuperSecretPassword!\" in password field",
+            "name": "\"Option 1\" is selected",
             "match": {
               "arguments": [
                 {
-                  "val": "SuperSecretPassword!",
-                  "offset": 17
+                  "val": "Option 1",
+                  "offset": 1
                 }
               ],
-              "location": "loginsteps.the_user_Enters_in_password_field(String)"
+              "location": "dropdownsteps.is_selected(String)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 945421782,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Clicks on Login Button",
-            "match": {
-              "location": "loginsteps.clicks_on_Login_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45741510,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User is Navigated to Secure Area",
-            "match": {
-              "location": "loginsteps.user_is_Navigated_to_Secure_Area()"
-            },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Dropdowntag"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4545172650,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginsteps.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Select one option from the dropdown",
+        "description": "",
+        "id": "dropdown-feature;select-one-option-from-the-dropdown;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 43646,
+              "status": "passed"
+            },
+            "match": {
+              "location": "loginsteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 41325,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user in HomePage",
+            "match": {
+              "location": "loginsteps.the_user_in_HomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 388601,
+              "error_message": "java.lang.NullPointerException\n\tat StepDefinations.dropdownsteps.clicks_on_Dropdownoption(dropdownsteps.java:26)\n\tat ✽.And Clicks on Dropdownoption(dropdown.feature:5)\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Clicks on Dropdownoption",
+            "match": {
+              "location": "dropdownsteps.clicks_on_Dropdownoption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "The user selects \"Option 2\" from the dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Option 2",
+                  "offset": 18
+                }
+              ],
+              "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "\"Option 2\" is selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Option 2",
+                  "offset": 1
+                }
+              ],
+              "location": "dropdownsteps.is_selected(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@Dropdowntag"
           }
         ]
       }
     ],
-    "name": "Login Feature",
+    "name": "Dropdown Feature",
     "description": "",
-    "id": "login-feature",
+    "id": "dropdown-feature",
     "keyword": "Feature",
-    "uri": "Login.feature"
+    "uri": "dropdown.feature"
   }
 ]
