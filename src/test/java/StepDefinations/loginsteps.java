@@ -31,20 +31,16 @@ public class loginsteps {
         driver.get("http://the-internet.herokuapp.com/");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
+
+        homePage = new HomePage(driver);
     }
 
     @After
     public void teardown() {
-        //driver.quit();
+        driver.quit();
     }
 
-    @Given("^The user in HomePage$")
-    public void the_user_in_HomePage() throws Throwable {
 
-        homePage = new HomePage(driver);
-
-
-    }
 
     @Given("^Clicks on FormAuthentication$")
     public void clicks_on_FormAuthentication() throws Throwable {

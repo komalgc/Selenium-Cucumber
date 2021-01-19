@@ -1,12 +1,7 @@
 Feature: Dropdown Feature
   @Dropdowntag
-  Scenario Outline: Select one option from the dropdown
-    Given The user in HomePage
-    And Clicks on Dropdownoption
-    When The user selects "<Dropdownoptiontoselect>" from the dropdown
-    Then "<Dropdownoptiontoselect>" is selected
+  Scenario: Select one option from the dropdown
+    Given Clicks on Dropdownoption page
+    When The user selects "Option 1" from the dropdown
+    Then "Option 1" is selected
 
-    Examples:
-    |Dropdownoptiontoselect|
-    |Option 1               |
-    |Option 2               |

@@ -6,62 +6,68 @@
         "before": [
           {
             "result": {
-              "duration": 10114640187,
+              "duration": 7906361164,
               "status": "passed"
             },
             "match": {
               "location": "loginsteps.setup()"
             }
+          },
+          {
+            "result": {
+              "duration": 5328560774,
+              "status": "passed"
+            },
+            "match": {
+              "location": "dropdownsteps.setup()"
+            }
           }
         ],
-        "line": 11,
+        "line": 3,
         "name": "Select one option from the dropdown",
         "description": "",
-        "id": "dropdown-feature;select-one-option-from-the-dropdown;;2",
+        "id": "dropdown-feature;select-one-option-from-the-dropdown",
         "after": [
           {
             "result": {
-              "duration": 51404,
+              "duration": 117924984,
               "status": "passed"
             },
             "match": {
               "location": "loginsteps.teardown()"
             }
+          },
+          {
+            "result": {
+              "duration": 94027240,
+              "status": "passed"
+            },
+            "match": {
+              "location": "dropdownsteps.teardown()"
+            }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 140137948,
+              "duration": 788326095,
               "status": "passed"
             },
             "line": 4,
-            "name": "The user in HomePage",
+            "name": "Clicks on Dropdownoption page",
             "match": {
-              "location": "loginsteps.the_user_in_HomePage()"
+              "location": "dropdownsteps.clicks_on_Dropdownoption()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1022288,
-              "error_message": "java.lang.NullPointerException\n\tat StepDefinations.dropdownsteps.clicks_on_Dropdownoption(dropdownsteps.java:26)\n\tat ✽.And Clicks on Dropdownoption(dropdown.feature:5)\n",
-              "status": "failed"
+              "duration": 181345058,
+              "status": "passed"
             },
             "line": 5,
-            "name": "Clicks on Dropdownoption",
-            "match": {
-              "location": "dropdownsteps.clicks_on_Dropdownoption()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
             "name": "The user selects \"Option 1\" from the dropdown",
             "match": {
               "arguments": [
@@ -72,16 +78,14 @@
               ],
               "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
             },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 131518293,
+              "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "\"Option 1\" is selected",
             "match": {
               "arguments": [
@@ -90,114 +94,8 @@
                   "offset": 1
                 }
               ],
-              "location": "dropdownsteps.is_selected(String)"
+              "location": "dropdownsteps.is_selected(String\u003e)"
             },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 2,
-            "name": "@Dropdowntag"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 4545172650,
-              "status": "passed"
-            },
-            "match": {
-              "location": "loginsteps.setup()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "Select one option from the dropdown",
-        "description": "",
-        "id": "dropdown-feature;select-one-option-from-the-dropdown;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 43646,
-              "status": "passed"
-            },
-            "match": {
-              "location": "loginsteps.teardown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 41325,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "The user in HomePage",
-            "match": {
-              "location": "loginsteps.the_user_in_HomePage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 388601,
-              "error_message": "java.lang.NullPointerException\n\tat StepDefinations.dropdownsteps.clicks_on_Dropdownoption(dropdownsteps.java:26)\n\tat ✽.And Clicks on Dropdownoption(dropdown.feature:5)\n",
-              "status": "failed"
-            },
-            "line": 5,
-            "name": "Clicks on Dropdownoption",
-            "match": {
-              "location": "dropdownsteps.clicks_on_Dropdownoption()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "The user selects \"Option 2\" from the dropdown",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Option 2",
-                  "offset": 18
-                }
-              ],
-              "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "\"Option 2\" is selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Option 2",
-                  "offset": 1
-                }
-              ],
-              "location": "dropdownsteps.is_selected(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
             "keyword": "Then "
           }
         ],
@@ -213,6 +111,6 @@
     "description": "",
     "id": "dropdown-feature",
     "keyword": "Feature",
-    "uri": "dropdown.feature"
+    "uri": "src/test/java/Features/dropdown.feature"
   }
 ]
