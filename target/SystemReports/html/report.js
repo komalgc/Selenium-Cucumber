@@ -1,87 +1,84 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/Features/dropdown.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("hover.feature");
 formatter.feature({
   "line": 1,
-  "name": "Dropdown Feature",
+  "name": "Hover test",
   "description": "",
-  "id": "dropdown-feature",
+  "id": "hover-test",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7906361164,
+  "duration": 7964212130,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5328560774,
+  "duration": 13818982693,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Select one option from the dropdown",
+  "name": "testSuccessful hover and get title",
   "description": "",
-  "id": "dropdown-feature;select-one-option-from-the-dropdown",
+  "id": "hover-test;testsuccessful-hover-and-get-title",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 2,
-      "name": "@Dropdowntag"
+      "name": "@HoverTag"
     }
   ]
 });
 formatter.step({
   "line": 4,
-  "name": "Clicks on Dropdownoption page",
+  "name": "Click on HoverPage",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "The user selects \"Option 1\" from the dropdown",
+  "name": "The user Hovers on figure1",
   "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "\"Option 1\" is selected",
+  "name": "Caption is Displayed",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "dropdownsteps.clicks_on_Dropdownoption()"
+formatter.step({
+  "line": 7,
+  "name": "The title is \"name: user1\"",
+  "keyword": "And "
 });
+formatter.step({
+  "line": 8,
+  "name": "The link text is \"View Profile\"",
+  "keyword": "And "
+});
+formatter.match({});
 formatter.result({
-  "duration": 788326095,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Option 1",
-      "offset": 18
-    }
-  ],
-  "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 181345058,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "Option 1",
-      "offset": 1
-    }
-  ],
-  "location": "dropdownsteps.is_selected(String\u003e)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 131518293,
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "duration": 183983746,
   "status": "passed"
 });
 formatter.after({
-  "duration": 117924984,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 94027240,
+  "duration": 176544129,
   "status": "passed"
 });
 });

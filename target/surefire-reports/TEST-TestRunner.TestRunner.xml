@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner.TestRunner" time="14.245" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner.TestRunner" time="15.58" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=src/test/java/Features/dropdown.feature"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="/usr/local/Cellar/maven/3.6.2/libexec"/>
@@ -39,6 +39,7 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="cucumber.options" value="src/test/java/Features/dropdown.feature"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/8q/32vj8vl511b55n4trkf440kr0000gn/T/"/>
     <property name="java.version" value="13.0.1"/>
@@ -56,11 +57,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="Given The user in HomePage" classname="Scenario: Test Successful Login" time="0.002"/>
-  <testcase name="And Clicks on FormAuthentication" classname="Scenario: Test Successful Login" time="0"/>
-  <testcase name="When The user Enters &quot;tomsmith&quot; in username field" classname="Scenario: Test Successful Login" time="0"/>
-  <testcase name="And The user Enters &quot;SuperSecretPassword!&quot; in password field" classname="Scenario: Test Successful Login" time="0"/>
-  <testcase name="And Clicks on Login Button" classname="Scenario: Test Successful Login" time="0"/>
-  <testcase name="Then User is Navigated to Secure Area" classname="Scenario: Test Successful Login" time="0"/>
-  <testcase name="Scenario: Test Successful Login" classname="Scenario: Test Successful Login" time="0.172"/>
+  <testcase name="Given Clicks on DropdownOption page" classname="Scenario: Select one option from the dropdown" time="0.003"/>
+  <testcase name="When The user selects below options from the dropdown" classname="Scenario: Select one option from the dropdown" time="0.001"/>
+  <testcase name="Then Should show selected options" classname="Scenario: Select one option from the dropdown" time="0.001"/>
+  <testcase name="Scenario: Select one option from the dropdown" classname="Scenario: Select one option from the dropdown" time="0.224"/>
 </testsuite>

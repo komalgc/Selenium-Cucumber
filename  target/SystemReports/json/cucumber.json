@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 7906361164,
+              "duration": 7964212130,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 5328560774,
+              "duration": 13818982693,
               "status": "passed"
             },
             "match": {
@@ -24,13 +24,13 @@
           }
         ],
         "line": 3,
-        "name": "Select one option from the dropdown",
+        "name": "testSuccessful hover and get title",
         "description": "",
-        "id": "dropdown-feature;select-one-option-from-the-dropdown",
+        "id": "hover-test;testsuccessful-hover-and-get-title",
         "after": [
           {
             "result": {
-              "duration": 117924984,
+              "duration": 183983746,
               "status": "passed"
             },
             "match": {
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 94027240,
+              "duration": 176544129,
               "status": "passed"
             },
             "match": {
@@ -52,65 +52,62 @@
         "steps": [
           {
             "result": {
-              "duration": 788326095,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 4,
-            "name": "Clicks on Dropdownoption page",
-            "match": {
-              "location": "dropdownsteps.clicks_on_Dropdownoption()"
-            },
+            "name": "Click on HoverPage",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 181345058,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
-            "name": "The user selects \"Option 1\" from the dropdown",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Option 1",
-                  "offset": 18
-                }
-              ],
-              "location": "dropdownsteps.the_user_selects_from_the_dropdown(String)"
-            },
+            "name": "The user Hovers on figure1",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 131518293,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 6,
-            "name": "\"Option 1\" is selected",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Option 1",
-                  "offset": 1
-                }
-              ],
-              "location": "dropdownsteps.is_selected(String\u003e)"
-            },
+            "name": "Caption is Displayed",
+            "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "The title is \"name: user1\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "The link text is \"View Profile\"",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
             "line": 2,
-            "name": "@Dropdowntag"
+            "name": "@HoverTag"
           }
         ]
       }
     ],
-    "name": "Dropdown Feature",
+    "name": "Hover test",
     "description": "",
-    "id": "dropdown-feature",
+    "id": "hover-test",
     "keyword": "Feature",
-    "uri": "src/test/java/Features/dropdown.feature"
+    "uri": "hover.feature"
   }
 ]
