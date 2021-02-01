@@ -1,109 +1,73 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("hover.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Horizontal.feature");
 formatter.feature({
   "line": 1,
-  "name": "Hover test",
+  "name": "test Horizontal slider",
   "description": "",
-  "id": "hover-test",
+  "id": "test-horizontal-slider",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8443107802,
+  "duration": 10879857166,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "testSuccessful hover and get title",
+  "name": "slide the slider to value 4",
   "description": "",
-  "id": "hover-test;testsuccessful-hover-and-get-title",
+  "id": "test-horizontal-slider;slide-the-slider-to-value-4",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
       "line": 2,
-      "name": "@HoverTag"
+      "name": "@Slider"
     }
   ]
 });
 formatter.step({
   "line": 4,
-  "name": "Click on HoverPage",
+  "name": "the user is on the Horizontalslider page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "The user Hovers on figure 1",
+  "name": "slide the slider to right till the value is \"4\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "Caption is Displayed",
+  "name": "slide is moved",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 7,
-  "name": "The title is \"name: user1\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "The link text is \"View Profile\"",
-  "keyword": "And "
-});
 formatter.match({
-  "location": "hoversteps.click_on_HoverPage()"
+  "location": "HorizontalSteps.the_user_is_on_the_Horizontalslider_page()"
 });
 formatter.result({
-  "duration": 984579166,
+  "duration": 1043125050,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "1",
-      "offset": 26
+      "val": "4",
+      "offset": 45
     }
   ],
-  "location": "hoversteps.theUserHoversOnFigure(int)"
+  "location": "HorizontalSteps.slide_the_slider_to_right_till_the_value_is(String)"
 });
 formatter.result({
-  "duration": 214821712,
+  "duration": 819659068,
   "status": "passed"
 });
 formatter.match({
-  "location": "hoversteps.caption_is_Displayed()"
+  "location": "HorizontalSteps.slide_is_moved()"
 });
 formatter.result({
-  "duration": 77106039,
+  "duration": 35988363,
   "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "name: user1",
-      "offset": 14
-    }
-  ],
-  "location": "hoversteps.the_title_is(String)"
-});
-formatter.result({
-  "duration": 72473858,
-  "error_message": "org.junit.ComparisonFailure: user not found expected:\u003cname: user[2]\u003e but was:\u003cname: user[1]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat Hover.hoversteps.the_title_is(hoversteps.java:63)\n\tat ✽.And The title is \"name: user1\"(hover.feature:7)\n",
-  "status": "failed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "View Profile",
-      "offset": 18
-    }
-  ],
-  "location": "hoversteps.the_link_text_is(String)"
-});
-formatter.result({
-  "status": "skipped"
 });
 formatter.after({
-  "duration": 171059289,
+  "duration": 209133149,
   "status": "passed"
 });
 });

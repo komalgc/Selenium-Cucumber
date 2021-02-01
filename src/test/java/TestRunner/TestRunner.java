@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/Hover",
-        glue = {"Hover"},
+        features = "src/test/java/HorizontalSlider",
+        glue = {"HorizontalSlider"},
         plugin = {"pretty", "html:target/SystemReports/html",
                 "json: target/SystemReports/json/cucumber.json"},
-        tags = {"@HoverTag"}
+        tags = {"@Slider"}
 
 )
 public class TestRunner {

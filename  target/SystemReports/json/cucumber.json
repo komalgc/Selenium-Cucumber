@@ -6,26 +6,26 @@
         "before": [
           {
             "result": {
-              "duration": 8443107802,
+              "duration": 10879857166,
               "status": "passed"
             },
             "match": {
-              "location": "hoversteps.setup()"
+              "location": "HorizontalSteps.setup()"
             }
           }
         ],
         "line": 3,
-        "name": "testSuccessful hover and get title",
+        "name": "slide the slider to value 4",
         "description": "",
-        "id": "hover-test;testsuccessful-hover-and-get-title",
+        "id": "test-horizontal-slider;slide-the-slider-to-value-4",
         "after": [
           {
             "result": {
-              "duration": 171059289,
+              "duration": 209133149,
               "status": "passed"
             },
             "match": {
-              "location": "hoversteps.teardown()"
+              "location": "HorizontalSteps.teardown()"
             }
           }
         ],
@@ -34,95 +34,59 @@
         "steps": [
           {
             "result": {
-              "duration": 984579166,
+              "duration": 1043125050,
               "status": "passed"
             },
             "line": 4,
-            "name": "Click on HoverPage",
+            "name": "the user is on the Horizontalslider page",
             "match": {
-              "location": "hoversteps.click_on_HoverPage()"
+              "location": "HorizontalSteps.the_user_is_on_the_Horizontalslider_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 214821712,
+              "duration": 819659068,
               "status": "passed"
             },
             "line": 5,
-            "name": "The user Hovers on figure 1",
+            "name": "slide the slider to right till the value is \"4\"",
             "match": {
               "arguments": [
                 {
-                  "val": "1",
-                  "offset": 26
+                  "val": "4",
+                  "offset": 45
                 }
               ],
-              "location": "hoversteps.theUserHoversOnFigure(int)"
+              "location": "HorizontalSteps.slide_the_slider_to_right_till_the_value_is(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 77106039,
+              "duration": 35988363,
               "status": "passed"
             },
             "line": 6,
-            "name": "Caption is Displayed",
+            "name": "slide is moved",
             "match": {
-              "location": "hoversteps.caption_is_Displayed()"
+              "location": "HorizontalSteps.slide_is_moved()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 72473858,
-              "error_message": "org.junit.ComparisonFailure: user not found expected:\u003cname: user[2]\u003e but was:\u003cname: user[1]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat Hover.hoversteps.the_title_is(hoversteps.java:63)\n\tat ✽.And The title is \"name: user1\"(hover.feature:7)\n",
-              "status": "failed"
-            },
-            "line": 7,
-            "name": "The title is \"name: user1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "name: user1",
-                  "offset": 14
-                }
-              ],
-              "location": "hoversteps.the_title_is(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "The link text is \"View Profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "View Profile",
-                  "offset": 18
-                }
-              ],
-              "location": "hoversteps.the_link_text_is(String)"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
             "line": 2,
-            "name": "@HoverTag"
+            "name": "@Slider"
           }
         ]
       }
     ],
-    "name": "Hover test",
+    "name": "test Horizontal slider",
     "description": "",
-    "id": "hover-test",
+    "id": "test-horizontal-slider",
     "keyword": "Feature",
-    "uri": "hover.feature"
+    "uri": "Horizontal.feature"
   }
 ]
