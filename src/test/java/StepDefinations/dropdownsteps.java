@@ -27,7 +27,6 @@ public class dropdownsteps {
     public void setup() {
 
         WebDriverManager.chromedriver().setup();
-
         driver = new ChromeDriver();
         driver.get("http://the-internet.herokuapp.com/");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -39,12 +38,9 @@ public class dropdownsteps {
         driver.quit();
     }
 
-
-
     @Given("^Clicks on Dropdownoption page$")
     public void clicks_on_Dropdownoption() {
         dropdownPage = homePage.clickonDropDown();
-
     }
 
     @When("^The user selects \"([^\"]*)\" from the dropdown$")
@@ -55,7 +51,6 @@ public class dropdownsteps {
 
     @Then("^\"([^\"]*)\" is selected$")
     public void is_selected(List<String> arg1)  {
-
         Assert.assertEquals(dropdownPage.getSelectedoptions(), arg1);
     }
 

@@ -9,6 +9,7 @@ public class SecureAreaPage extends HomePage {
      By alertText = By.id("flash");
 
     public SecureAreaPage(WebDriver driver) {
+
         super(driver);
     }
 

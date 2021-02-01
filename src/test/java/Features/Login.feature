@@ -1,6 +1,6 @@
 Feature: Login Feature
+  @Login
   Scenario: Test Successful Login
-
 
     Given Clicks on FormAuthentication
     When The user Enters "tomsmith" in username field

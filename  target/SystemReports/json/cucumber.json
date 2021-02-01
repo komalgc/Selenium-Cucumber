@@ -6,20 +6,11 @@
         "before": [
           {
             "result": {
-              "duration": 7964212130,
+              "duration": 8443107802,
               "status": "passed"
             },
             "match": {
-              "location": "loginsteps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 13818982693,
-              "status": "passed"
-            },
-            "match": {
-              "location": "dropdownsteps.setup()"
+              "location": "hoversteps.setup()"
             }
           }
         ],
@@ -30,20 +21,11 @@
         "after": [
           {
             "result": {
-              "duration": 183983746,
+              "duration": 171059289,
               "status": "passed"
             },
             "match": {
-              "location": "loginsteps.teardown()"
-            }
-          },
-          {
-            "result": {
-              "duration": 176544129,
-              "status": "passed"
-            },
-            "match": {
-              "location": "dropdownsteps.teardown()"
+              "location": "hoversteps.teardown()"
             }
           }
         ],
@@ -52,47 +34,80 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 984579166,
+              "status": "passed"
             },
             "line": 4,
             "name": "Click on HoverPage",
-            "match": {},
+            "match": {
+              "location": "hoversteps.click_on_HoverPage()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 214821712,
+              "status": "passed"
             },
             "line": 5,
-            "name": "The user Hovers on figure1",
-            "match": {},
+            "name": "The user Hovers on figure 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 26
+                }
+              ],
+              "location": "hoversteps.theUserHoversOnFigure(int)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 77106039,
+              "status": "passed"
             },
             "line": 6,
             "name": "Caption is Displayed",
-            "match": {},
+            "match": {
+              "location": "hoversteps.caption_is_Displayed()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 72473858,
+              "error_message": "org.junit.ComparisonFailure: user not found expected:\u003cname: user[2]\u003e but was:\u003cname: user[1]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat Hover.hoversteps.the_title_is(hoversteps.java:63)\n\tat ✽.And The title is \"name: user1\"(hover.feature:7)\n",
+              "status": "failed"
             },
             "line": 7,
             "name": "The title is \"name: user1\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "name: user1",
+                  "offset": 14
+                }
+              ],
+              "location": "hoversteps.the_title_is(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "status": "skipped"
             },
             "line": 8,
             "name": "The link text is \"View Profile\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "View Profile",
+                  "offset": 18
+                }
+              ],
+              "location": "hoversteps.the_link_text_is(String)"
+            },
             "keyword": "And "
           }
         ],

@@ -13,6 +13,7 @@ public class DropdownPage extends HomePage {
     By dropdown = By.id("dropdown");
 
     public DropdownPage(WebDriver driver) {
+
         super(driver);
     }
 
@@ -24,7 +25,7 @@ public class DropdownPage extends HomePage {
 
         List<WebElement> selectedoptions = findFromDropDownElement().getAllSelectedOptions();
 
-        // Every element in this webelement list map each, and get its text and collect them in a List
+        // Every element in this  webelement list map each, and get its text and collect them in a List
 
         return selectedoptions.stream().map(e -> e.getText()).collect(Collectors.toList());
     }
